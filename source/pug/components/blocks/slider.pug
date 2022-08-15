@@ -1,0 +1,22 @@
+mixin slider(data={})
+  - const slider = data.slider ? data.slider : false
+
+  if slider
+    .slider
+      span.slider__counter
+        .slider__current 1
+        | /
+        .slider__total!= slider.length
+      .slider__slides
+        each slide in slider
+          .slider__slide
+            +img('content/slider', `${slide.img}`, 'png', 303, 436, 'slide')
+            p.slider__text!= slide.text
+      .slider__controls
+        button(aria-label='Назад')
+          +icon('arrow-slider', 4, 16)
+        button(aria-label='Вперед' )
+          +icon('arrow-slider', 4, 16)
+      .slider__search
+        a(href='#') Искать промокод
+          +icon('arrow-right', 26, 4)

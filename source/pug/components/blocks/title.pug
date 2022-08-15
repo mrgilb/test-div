@@ -1,0 +1,6 @@
+mixin title(data={})
+  - const tag = data.tag ? data.tag : 'p'
+  - const text = data.text ? data.text : false
+  - const lvl = data.lvl ? data.lvl : false
+
+  #{tag}.title(class=`title--h${lvl}`)!=text

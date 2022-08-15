@@ -1,0 +1,7 @@
+mixin logo(data={})
+  - const tag = data.href ? 'a' : 'div'
+  - const href = data.href || false;
+
+  #{tag}.logo(href=href)&attributes(attributes)
+    +img('svg/', 'logo','svg', 182, 25, 'logo')
+

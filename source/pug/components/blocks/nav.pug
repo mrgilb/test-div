@@ -1,0 +1,12 @@
+mixin nav(data={})
+  - const links = data.links ? data.links : false
+
+  .nav
+    button(aria-label='Открыть').nav__btn
+      span
+    ul.nav__list
+      each link, index in links
+        li(class=`${link.isActive ? 'is-active' : '' }`).nav__item
+          a(href=`${link.href}`).nav__link
+            span!= `0${index + 1}`
+            != `${link.text}`

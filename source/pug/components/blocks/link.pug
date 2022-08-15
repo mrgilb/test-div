@@ -1,0 +1,5 @@
+mixin link(data={})
+  - const link = data.link ? data.link : false
+
+  if link
+    a(href=link.href)&attributes(attr,attributes).link!= link.text

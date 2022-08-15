@@ -1,0 +1,50 @@
+.slider {
+  display: grid;
+  align-items: center;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+
+  &__counter {
+    grid-area: header;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  &__slides {
+    grid-area: main;
+  }
+
+  &__controls {
+    grid-area: main;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+  }
+
+  &__slide {
+    display: grid;
+    grid-template-areas: "main";
+
+    img {
+      grid-area: main;
+    }
+
+    .slider__text {
+      grid-area: main;
+      align-self: flex-end;
+      z-index: 1;
+    }
+  }
+
+  &__search {
+    grid-area: main;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+  }
+}

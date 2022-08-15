@@ -1,0 +1,14 @@
+.title {
+  font-family: $ff-futura;
+  margin: 0;
+
+  &--h1 {
+    color: $color-grandis;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: -0.692308px;
+    text-align: center;
+    text-transform: uppercase
+  }
+}
