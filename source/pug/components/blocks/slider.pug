@@ -8,14 +8,16 @@ mixin slider(data={})
         | /
         .slider__total!= slider.length
       .slider__slides
-        each slide in slider
-          .slider__slide
-            +img('content/slider', `${slide.img}`, 'png', 303, 436, 'slide')
-            p.slider__text!= slide.text
+        .slider__slider-line
+          each slide in slider
+            .slider__slide
+              .slider__img
+                +img('content/slider', `${slide.img}`, 'png', 303, 436, 'slide')
+              p.slider__text!= slide.text
       .slider__controls
-        button(aria-label='Назад')
+        button(aria-label='Назад' id='slider-prev')
           +icon('arrow-slider', 4, 16)
-        button(aria-label='Вперед' )
+        button(aria-label='Вперед' id='slider-next')
           +icon('arrow-slider', 4, 16)
       .slider__search
         a(href='#') Искать промокод

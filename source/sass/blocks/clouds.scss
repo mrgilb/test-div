@@ -5,4 +5,6 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+  pointer-events: none;
+  z-index: 1;
 }
