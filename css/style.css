@@ -496,7 +496,7 @@ template {
 }
 
 .content {
-  background-image: url("../../img/content/background-clouds.png");
+  background-image: url("../img/content/background-clouds.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -960,7 +960,7 @@ template {
 .clouds {
   display: flex;
   flex-direction: column;
-  background-image: url("../../img/content/clouds.png");
+  background-image: url("../img/content/clouds.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
