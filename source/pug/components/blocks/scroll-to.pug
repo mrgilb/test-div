@@ -1,7 +1,0 @@
-mixin scroll-to(data={})
-  - const text = data.text ? data.text : false
-
-  if text
-    .scroll-to
-      +icon('arrow-bottom', 4, 63)
-      p.scroll-to__text!= text
