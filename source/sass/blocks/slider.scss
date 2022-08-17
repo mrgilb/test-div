@@ -7,7 +7,6 @@
     "header"
     "main";
   grid-template-rows: 10% 90%;
-  overflow: hidden;
 
   &__counter {
     grid-area: header;
@@ -84,7 +83,6 @@
     display: grid;
     grid-template-areas: "main";
     justify-items: center;
-    min-width: 900px;
     height: 100%;
     width: 100%;
     opacity: 1;
